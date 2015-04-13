@@ -1,5 +1,27 @@
 
-1.- Implementar una clase de prueba que cifre y descifre el archivo quijote.txt utilizando RSA.
+1.- Implementar una clase de prueba que cifre y descifre el archivo quijote.txt utilizando:
+- AES (simétrico)
+- RSA (asimétrico)
+
+NOTA: Juegue un poco con las opciones de creación de claves
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 
