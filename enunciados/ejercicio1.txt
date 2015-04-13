@@ -13,20 +13,10 @@ NOTA: Debe utilizar como algoritmo Triple DES (consultar en Anexo A el nombre de
 VER: http://docs.oracle.com/javase/6/docs/technotes/guides/security/crypto/CryptoSpec.html#CipherInput
 
 
-
-
-
-
-
-
-
-
-
-
 ---
 
 3.- Implementar una clase de prueba que obtenga el hash (SHA1) del documento quijote.txt y lo muestre en pantalla en hexadecimal (compruebe con alguna herramienta en línea)
-- http://www.md5calc.com/
+- http://onlinemd5.com/
 - http://stackoverflow.com/questions/9655181/convert-from-byte-array-to-hex-string-in-java
 
 ---
