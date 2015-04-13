@@ -9,6 +9,7 @@ import java.util.Base64.Encoder;
 
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
+import javax.xml.bind.DatatypeConverter;
 
 public class TestSk {
 	public static final String ALGORITMO = "DES";
@@ -63,7 +64,7 @@ public class TestSk {
 		System.out.println("clave = " + clave);
 		
 		byte[] cifrado = cifrar(texto, clave);
-		System.out.println("cifrado = " + new String(cifrado));
+		System.out.println("cifrado (base 64) = " + DatatypeConverter.printBase64Binary(cifrado));
 		
 		byte[] descifrado = descifrar(cifrado, clave);
 		System.out.println("descifrado = " + new String(descifrado));
