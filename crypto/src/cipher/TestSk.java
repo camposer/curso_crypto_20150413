@@ -4,15 +4,13 @@ import java.io.File;
 import java.nio.file.Files;
 import java.security.Key;
 import java.security.NoSuchAlgorithmException;
-import java.util.Base64;
-import java.util.Base64.Encoder;
 
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.xml.bind.DatatypeConverter;
 
 public class TestSk {
-	public static final String ALGORITMO = "DES";
+	public static final String ALGORITMO = "AES"; // "DES"
 	public static final String ARCHIVO = "tmp/quijote.txt";
 	private Cipher cipher;
 	
