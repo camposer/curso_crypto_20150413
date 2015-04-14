@@ -31,3 +31,14 @@ NOTA: Previamente debe exportar el certificado (Ej. Twitter) desde el navegador 
 5.- Extraer certificados (exportar) del keystore $ keytool -export -alias mycert -keystore keystore.jks -file mycert.cer
 
 7.- Extraer certificados del keystore JKS e importar keystore PKCS12 $ keytool -importkeystore -srckeystore keystore.jks -destkeystore keystore.p12 -srcstoretype JKS -deststoretype PKCS12 
+
+---
+
+Con base en el enlace "Retrieving a Key Pair from a Key Store" en el README, refactorice el código de Firma digital (Ejercicio 1.4) para que ahora utilice las claves privada y pública del almacén.
+
+
+
+
+
+
+
