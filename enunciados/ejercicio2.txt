@@ -9,7 +9,7 @@ Por ejemplo: C:\Program files\Java\jdk_1.7\jre\bin
 - Abrir las propiedades de Equipo
 - Pedir variables de entorno
 - Agregar a la variable existente PATH la ruta obtenida en el paso 1 después de ; (punto y coma)
-Por ejmplo:
+Por ejemplo:
 PATH=XXXXXXXX;C:\Program files\Java\jdk_1.7\jre\bin
 3.- Abrir una nueva consola y ejecutar:
 C:\> keytool

@@ -55,6 +55,10 @@ Enlaces
 	https://docs.continuent.com/tungsten-replicator-2.1/deployment-ssl-stores.html
 	- Java PKI Programmer's Guide
 	http://docs.oracle.com/javase/8/docs/technotes/guides/security/certpath/CertPathProgGuide.html
+	- Retrieving a Key Pair from a Key Store
+	http://www.java2s.com/Code/Java/Security/RetrievingaKeyPairfromaKeyStore.htm
+	- RSA keypair generation and storing to keystore
+	http://stackoverflow.com/questions/5263156/rsa-keypair-generation-and-storing-to-keystore
 	
 - Control de Acceso
 	- Permissions and Security Policies
