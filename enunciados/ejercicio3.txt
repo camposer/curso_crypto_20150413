@@ -1,6 +1,9 @@
 COMO CONFIGURAR SSL EN TOMCAT
 =============================
 
+0.- Descargar Apache Tomcat 
+http://ftp.cixug.es/apache/tomcat/tomcat-8/v8.0.21/bin/apache-tomcat-8.0.21.zip
+
 1.- Descomentar la etiqueta XML mostrada abajo dentro del archivo $TOMCAT_HOME/conf/server.xml
 
 <Connector 
