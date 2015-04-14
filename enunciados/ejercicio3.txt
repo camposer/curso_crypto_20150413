@@ -1,52 +1,19 @@
-Ejercicio 2
-===========
+COMO CONFIGURAR SSL EN TOMCAT
+=============================
 
-1. Implementar un objeto remoto que ofrezca las operaciones CRUD+ sobre la entidad Persona
-2. Implementar un cliente que permita utilizar las operaciones CRUD+ sobre la entidad Persona a través de JRMI.
+1.- Descomentar la etiqueta XML mostrada abajo dentro del archivo $TOMCAT_HOME/conf/server.xml
 
-	Por ejemplo:
-		Gestión de personas
-		1. Agregar
-		2. Modificar
-		3. Eliminar
-		4. Obtener uno
-		5. Obtener todos
-		? 1
+<Connector 
+           port="8443" maxThreads="200"
+           scheme="https" secure="true" SSLEnabled="true"
+           keystoreFile="${user.home}/.keystore" keystorePass="changeit"
+           clientAuth="false" sslProtocol="TLS"/>
 
-		Nombre? Juan
-		Apellido? Pérez
-		Fecha de Nacimiento? 2012-01-01
-		
-		Gestión de personas
-		1. Agregar
-		2. Modificar
-		3. Eliminar
-		4. Obtener uno
-		5. Obtener todos
-		? 5
+NOTA: Si omite el keystoreFile utilizará por defecto ${user.home}/.keystore. Puede cambiarlo a cualquiera de los que estamos utilizando ahora
 
-		[ Nombre = Juan, Apellido = Pérez, Fecha de Nacimiento = XXX ]
+2.- Configurar la variable de entorno JAVA_HOME. Debe apuntar a la carpeta donde está el JRE. Por ejemplo:
+	C:\Program files\Java\jdk_7\
 
+3.- Iniciar el tomcat. Debe ejecutar (doble-clic) el fichero: $TOMCAT_HOME/bin/startup.bat
 
-3. Seguir el HOWTO COMO_CONF_SSL.txt (primera parte) y observar el funcionamiento de la aplicación utilizando SSL de 1 vía (1w).
-NOTA: Idealmente instale un sniffer como Wireshark y observe los paquetes que viajan en la red.
-
-
-4. Seguir el HOWTO COMO_CONF_SSL.txt (segunda parte) y observar el funcionamiento de la aplicación utilizando SSL de 2 vías (2w).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+4.- Probar (mirar certificado). Abrir con el navegador: https://localhost:8443
