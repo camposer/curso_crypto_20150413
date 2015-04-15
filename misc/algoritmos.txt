@@ -1,5 +1,0 @@
-Algoritmos más utilizados actualmente:
-- Cifrado simétrico: AES (clave de 1024 ó 2048 bits). Popular 3DES
-- Cifrado asimétrico: RSA. Popular Diffie-Hellman
-- Hashing: SHA-256. Popular: MD5 o SHA1
-
