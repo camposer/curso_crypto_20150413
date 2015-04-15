@@ -11,22 +11,22 @@ public class CalculadoraImpl extends UnicastRemoteObject implements Calculadora 
 	private static final long serialVersionUID = 1L;
 
 	@Override
-	public float sumar(float a, float b) {
+	public float sumar(float a, float b) throws RemoteException {
 		return a + b;
 	}
 
 	@Override
-	public float restar(float a, float b) {
+	public float restar(float a, float b) throws RemoteException {
 		return a - b;
 	}
 
 	@Override
-	public float multiplicar(float a, float b) {
+	public float multiplicar(float a, float b) throws RemoteException {
 		return a * b;
 	}
 
 	@Override
-	public float dividir(float a, float b) {
+	public float dividir(float a, float b) throws RemoteException {
 		return a / b;
 	}
 

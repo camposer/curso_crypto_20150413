@@ -1,0 +1,29 @@
+Cómo programar un cliente-servidor RMI
+======================================
+
+Servidor:
+
+1.- Crear interfaz remota
+	- Debe extender de java.rmi.Remote
+	- Cada método remoto debe arrojar la excepción java.rmi.RemoteException
+
+2.- Implementar servidor remoto. Debe extender de la clase UnicastRemoteObject
+
+3.- Levantar el registro RMI
+	- Manualmente: JDK_HOME/bin/rmiregistry
+	- Programáticamente
+		- LocateRegistry.createRegistry
+
+4.- Crear objeto remoto y enlazar en el rmiregistry
+
+---
+
+Cliente:
+
+1.- Obtener el registro rmi (LocateRegistry.getRegistry)
+
+2.- Pedir la referencia al objeto remoto (registry.lookup)
+
+3.- Invocar el método remoto a través de la interfaz remota
+
+

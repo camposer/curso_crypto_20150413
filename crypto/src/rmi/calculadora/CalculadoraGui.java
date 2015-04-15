@@ -1,5 +1,6 @@
 package rmi.calculadora;
 
+import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.util.Scanner;
@@ -18,11 +19,11 @@ public class CalculadoraGui {
 		}
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws RemoteException {
 		new CalculadoraGui().iniciar();
 	}
 
-	private void iniciar() {
+	private void iniciar() throws RemoteException {
 
 		while (true) {
 			System.out.println();

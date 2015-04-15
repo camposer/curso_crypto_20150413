@@ -23,7 +23,5 @@ public class CalculadoraServer {
 		// 3.- Enlazando objeto remoto
 		registry.rebind("calculadora", calculadora);
 		System.out.println("Objeto enlazado");
-		
-		//Thread.sleep(TIMEOUT);
 	}
 }
