@@ -1,6 +1,13 @@
 package rmi.calculadora;
 
-public class CalculadoraImpl implements Calculadora {
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+
+public class CalculadoraImpl extends UnicastRemoteObject implements Calculadora {
+	protected CalculadoraImpl() throws RemoteException {
+		super();
+	}
+
 	private static final long serialVersionUID = 1L;
 
 	@Override
