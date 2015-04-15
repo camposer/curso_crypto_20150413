@@ -7,25 +7,19 @@ Ejercicio 2
 	Por ejemplo:
 		Gestión de personas
 		1. Agregar
-		2. Modificar
-		3. Eliminar
-		4. Obtener uno
-		5. Obtener todos
+		2. Obtener todos
 		? 1
 
 		Nombre? Juan
 		Apellido? Pérez
-		Fecha de Nacimiento? 2012-01-01
+		Edad? 30
 		
 		Gestión de personas
 		1. Agregar
-		2. Modificar
-		3. Eliminar
-		4. Obtener uno
-		5. Obtener todos
-		? 5
+		2. Obtener todos
+		? 2
 
-		[ Nombre = Juan, Apellido = Pérez, Fecha de Nacimiento = XXX ]
+		[ Nombre = Juan, Apellido = Pérez, Edad = 30 ]
 
 
 3. Seguir el HOWTO COMO_CONF_SSL.txt (primera parte) y observar el funcionamiento de la aplicación utilizando SSL de 1 vía (1w).
